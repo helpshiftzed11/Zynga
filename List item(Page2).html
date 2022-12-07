@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zynga Z Store</title>
+    <style>
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-column-gap: 10px;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.grid-container button {
+  padding: 12px;
+  color: white;
+  background-color: #ff0000;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  width: 50%;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.grid-container button:hover {
+  opacity: 0.7;
+}
+
+.grid-item{
+    border: 2px solid;
+    border-color: #ff0000;
+    text-align: center;
+}
+
+.navbar{
+  background-color: #ff0000;
+  color: white;
+  padding : 30px 100px;
+}
+.navbar h2{
+  font-size: 50px;
+  position: relative;
+  top: -20%;
+}
+
+    </style>
+</head>
+<body>
+<div class="navbar">
+  <img width="250" src="Zynga.svg.png" alt="Zynga Chips">
+  <h2>Welcome to the Z Store</h2>
+</div>
+
+    <div class="grid-container">
+        
+        <div class="grid-item">   
+         <img width="250" src="chips.jpeg" alt="Zynga Chips">
+         <h3>Great value of chips</h3>
+         <h1>264,000,000,000</h1>
+         <p><button onclick="functionName()">$199.99</button></p>
+         </div>
+
+         <div class="grid-item">   
+           <img width="250" src="chips.jpeg" alt="Zynga Chips">
+           <h3>Big Vault</h3>
+           <h1>110,000,000,000</h1>
+           <p><button onclick="functionName()">$99.99</button></p>
+        </div>
+
+        <div class="grid-item">   
+          <img width="250" src="chips.jpeg" alt="Zynga Chips">
+          <h3>Starter Vault</h3>
+          <h1>44,000,000,000</h1>
+          <p><button onclick="functionName()">$99.99</button></p>
+       </div>
+
+       <div class="grid-item">   
+        <img width="250" src="chips.jpeg" alt="Zynga Chips">
+        <h3>Medium Vault</h3>
+        <h1>13,200,000,000</h1>
+        <p><button onclick="functionName()">$99.99</button></p>
+     </div>
+    </div>
+
+   <script>
+function functionName(){
+
+window.open("http://127.0.0.1:5500/index_checkout.html");
+}
+
+   </script> 
+</body>
+</html>
